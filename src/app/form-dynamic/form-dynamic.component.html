@@ -1,4 +1,8 @@
-<po-page-edit (p-save)="onSubmit()" p-title="Exemplo -PO Dynamic Form">
+<po-page-edit
+  (p-save)="onSubmit()"
+  (p-save-new)="onSubmit()"
+  p-title="Exemplo -PO Dynamic Form"
+>
   <po-dynamic-form #dynamicForm [p-fields]="fields" [p-value]="value">
   </po-dynamic-form>
 </po-page-edit>
