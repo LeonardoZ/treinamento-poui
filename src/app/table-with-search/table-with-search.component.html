@@ -1,0 +1,14 @@
+<po-page-dynamic-search
+  p-title="Exemplo - Po-Table + PO Page Dynamic Search"
+  [p-filters]="filters"
+  (p-advanced-search)="onAdvancedSearch($event)"
+  (p-change-disclaimers)="onDisclaimerChanged($event)"
+>
+  <po-table
+    [p-columns]="columns"
+    [p-items]="data"
+    [p-striped]="true"
+    [p-height]="700"
+  >
+  </po-table>
+</po-page-dynamic-search>
