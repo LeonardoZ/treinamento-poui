@@ -1,0 +1,79 @@
+<po-page-default p-title="Exemplo de campos para dados - Formulário Contato">
+  <div class="po-row">
+    <form [formGroup]="myForm">
+      <!-- Button -->
+      <po-button
+        p-label="Ver valores do form"
+        p-kind="secondary"
+        class="po-m-2"
+        type="submit"
+        (p-click)="onSubmit()"
+      ></po-button>
+
+      <!-- Input -->
+      <po-widget p-title="Input" class="po-xs-6">
+        <po-input
+          formControlName="cellphone"
+          name="cellphone"
+          p-label="Celular"
+          p-mask-format-model="true"
+          p-mask="(+99) (99) 99999?-9999"
+          [p-auto-focus]="true"
+          p-clean="true"
+        ></po-input>
+      </po-widget>
+
+      <!-- Select -->
+      <po-widget p-title="Select" class="po-xs-6">
+        <po-select
+          formControlName="salesOptions"
+          [p-options]="salesType"
+          p-label="Escolha o tipo de contato de vendas que quer receber"
+          p-field-label="saleOf"
+          p-field-value="id"
+        ></po-select>
+      </po-widget>
+
+      <!--Radio group -->
+      <po-widget p-title="Radio Group" class="po-xs-6">
+        <po-radio-group
+          p-label="Em que período você quer receber a ligação?"
+          p-help="Informe o período"
+          [p-options]="radioOptions"
+          formControlName="callMeWhen"
+        >
+        </po-radio-group>
+      </po-widget>
+
+      <!-- Date picker -->
+      <po-widget p-title="Date Picker" class="po-xs-6">
+        <po-datepicker
+          formControlName="availableAt"
+          p-label="Em qual dia?"
+        ></po-datepicker>
+      </po-widget>
+
+      <!-- Switch -->
+      <po-widget p-title="Switch" class="po-xs-6">
+        <po-switch
+          p-label-off="Não considerar coleta de informações extras"
+          p-label-on="Considerar coleta de informações extras"
+          p-label="Informações extras na call"
+          formControlName="extraInfo"
+        >
+        </po-switch>
+      </po-widget>
+
+      <!-- Decimal -->
+      <po-widget p-title="Decimal" class="po-xs-6">
+        <po-decimal
+          formControlName="budget"
+          p-label="Qual o orçamento estimado?"
+          [p-max]="100000"
+          p-help="Valor"
+        >
+        </po-decimal>
+      </po-widget>
+    </form>
+  </div>
+</po-page-default>

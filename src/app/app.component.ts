@@ -17,9 +17,15 @@ export class AppComponent {
       shortLabel: 'Notas',
     },
     {
+      label: 'Campos',
+      link: '/fields',
+      icon: 'po-icon-folder',
+      shortLabel: 'Campos',
+    },
+    {
       label: 'Tabela Simples',
       link: 'table',
-      icon: 'po-icon-list',
+      icon: 'po-icon-table',
       shortLabel: 'Tabela S.',
     },
     {

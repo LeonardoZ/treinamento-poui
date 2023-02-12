@@ -11,6 +11,8 @@ import { TableWithSearchComponent } from './table-with-search/table-with-search.
 import { FormDynamicComponent } from './form-dynamic/form-dynamic.component';
 import { DisplayNotesComponent } from './display-notes/display-notes.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
+import { FieldsComponent } from './fields/fields.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,7 @@ import { SimpleTableComponent } from './simple-table/simple-table.component';
     FormDynamicComponent,
     DisplayNotesComponent,
     SimpleTableComponent,
+    FieldsComponent,
   ],
   imports: [
     BrowserModule,
@@ -27,6 +30,7 @@ import { SimpleTableComponent } from './simple-table/simple-table.component';
     HttpClientModule,
     RouterModule.forRoot([]),
     PoTemplatesModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

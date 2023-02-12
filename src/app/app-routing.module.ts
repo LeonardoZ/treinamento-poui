@@ -4,6 +4,7 @@ import { TableWithSearchComponent } from './table-with-search/table-with-search.
 import { FormDynamicComponent } from './form-dynamic/form-dynamic.component';
 import { DisplayNotesComponent } from './display-notes/display-notes.component';
 import { SimpleTableComponent } from './simple-table/simple-table.component';
+import { FieldsComponent } from './fields/fields.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,10 @@ const routes: Routes = [
   {
     path: 'table',
     component: SimpleTableComponent,
+  },
+  {
+    path: 'fields',
+    component: FieldsComponent,
   },
   {
     path: 'table-with-dynamic-search',
