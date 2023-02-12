@@ -10,6 +10,7 @@ import { PoTemplatesModule } from '@po-ui/ng-templates';
 import { TableWithSearchComponent } from './table-with-search/table-with-search.component';
 import { FormDynamicComponent } from './form-dynamic/form-dynamic.component';
 import { DisplayNotesComponent } from './display-notes/display-notes.component';
+import { SimpleTableComponent } from './simple-table/simple-table.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { DisplayNotesComponent } from './display-notes/display-notes.component';
     TableWithSearchComponent,
     FormDynamicComponent,
     DisplayNotesComponent,
+    SimpleTableComponent,
   ],
   imports: [
     BrowserModule,

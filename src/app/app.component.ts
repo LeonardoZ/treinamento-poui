@@ -11,16 +11,22 @@ export class AppComponent {
   readonly menus: Array<PoMenuItem> = [
     { label: 'Home', link: '/', shortLabel: 'Home', icon: 'po-icon-home' },
     {
-      label: 'Notes',
+      label: 'Notas',
       link: '/notes',
       icon: 'po-icon-news',
-      shortLabel: 'Notes',
+      shortLabel: 'Notas',
+    },
+    {
+      label: 'Tabela Simples',
+      link: 'table',
+      icon: 'po-icon-list',
+      shortLabel: 'Tabela S.',
     },
     {
       label: 'Tabela com Busca',
       link: 'table-with-dynamic-search',
       icon: 'po-icon-list',
-      shortLabel: 'Table',
+      shortLabel: 'Tabela Din',
     },
     {
       label: 'Form Dinamico',
