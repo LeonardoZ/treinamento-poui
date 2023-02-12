@@ -9,9 +9,15 @@ import { RouterModule } from '@angular/router';
 import { PoTemplatesModule } from '@po-ui/ng-templates';
 import { TableWithSearchComponent } from './table-with-search/table-with-search.component';
 import { FormDynamicComponent } from './form-dynamic/form-dynamic.component';
+import { DisplayNotesComponent } from './display-notes/display-notes.component';
 
 @NgModule({
-  declarations: [AppComponent, TableWithSearchComponent, FormDynamicComponent],
+  declarations: [
+    AppComponent,
+    TableWithSearchComponent,
+    FormDynamicComponent,
+    DisplayNotesComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

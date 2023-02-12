@@ -1,0 +1,21 @@
+<po-page-default p-title="Visor de Notas">
+  Esse é o meu visor de notas
+
+  <div class="po-row">
+    <po-widget
+      *ngFor="let note of notes"
+      class="po-xs-12 po-m-1"
+      p-title="Note"
+      [p-height]="200"
+      [p-no-shadow]="false"
+    >
+      <po-tag
+        *ngIf="note.relevant"
+        p-value="Relevante"
+        p-color="color-07"
+        [p-inverse]="true"
+      ></po-tag>
+      <po-info [p-label]="note.title" [p-value]="note.about"> </po-info>
+    </po-widget>
+  </div>
+</po-page-default>

@@ -10,6 +10,7 @@ import { PoMenuItem } from '@po-ui/ng-components';
 export class AppComponent {
   readonly menus: Array<PoMenuItem> = [
     { label: 'Home', link: '/' },
+    { label: 'Notes', link: '/notes' },
     { label: 'Tabela com Busca', link: 'table-with-dynamic-search' },
     { label: 'Form Dinamico', link: 'form-dynamic' },
   ];
