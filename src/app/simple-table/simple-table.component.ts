@@ -38,7 +38,7 @@ export class SimpleTableComponent {
     {
       login: 'eemoreira',
       name: 'Emerson',
-      age: 33,
+      age: 16,
     },
     {
       login: 'cvettorato',
