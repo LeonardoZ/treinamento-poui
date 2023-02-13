@@ -2,16 +2,18 @@
   <div class="po-row">
     <form [formGroup]="myForm">
       <!-- Button -->
-      <po-button
-        p-label="Ver valores do form"
-        p-kind="secondary"
-        class="po-m-2"
-        type="submit"
-        (p-click)="onSubmit()"
-      ></po-button>
+      <div class="po-sm-12">
+        <po-button
+          p-label="Ver valores do form"
+          p-kind="secondary"
+          class="po-m-2"
+          type="submit"
+          (p-click)="onSubmit()"
+        ></po-button>
+      </div>
 
       <!-- Input -->
-      <po-widget p-title="Input" class="po-xs-6">
+      <po-widget p-title="Input" class="po-sm-12 po-md-6">
         <po-input
           formControlName="cellphone"
           name="cellphone"
@@ -24,7 +26,7 @@
       </po-widget>
 
       <!-- Select -->
-      <po-widget p-title="Select" class="po-xs-6">
+      <po-widget p-title="Select" class="po-sm-12 po-md-6">
         <po-select
           formControlName="salesOptions"
           [p-options]="salesType"
@@ -35,10 +37,11 @@
       </po-widget>
 
       <!--Radio group -->
-      <po-widget p-title="Radio Group" class="po-xs-6">
+      <po-widget p-title="Radio Group" class="po-sm-12">
         <po-radio-group
           p-label="Em que período você quer receber a ligação?"
           p-help="Informe o período"
+          [p-columns]="3"
           [p-options]="radioOptions"
           formControlName="callMeWhen"
         >
@@ -46,7 +49,7 @@
       </po-widget>
 
       <!-- Date picker -->
-      <po-widget p-title="Date Picker" class="po-xs-6">
+      <po-widget p-title="Date Picker" class="po-sm-12 po-md-6">
         <po-datepicker
           formControlName="availableAt"
           p-label="Em qual dia?"
@@ -54,7 +57,7 @@
       </po-widget>
 
       <!-- Switch -->
-      <po-widget p-title="Switch" class="po-xs-6">
+      <po-widget p-title="Switch" class="po-sm-12 po-md-6">
         <po-switch
           p-label-off="Não considerar coleta de informações extras"
           p-label-on="Considerar coleta de informações extras"
@@ -65,7 +68,7 @@
       </po-widget>
 
       <!-- Decimal -->
-      <po-widget p-title="Decimal" class="po-xs-6">
+      <po-widget p-title="Decimal" class="po-sm-12">
         <po-decimal
           formControlName="budget"
           p-label="Qual o orçamento estimado?"
